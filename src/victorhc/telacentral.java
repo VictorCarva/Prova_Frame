@@ -31,16 +31,18 @@ public class telacentral extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         menuarquivo = new javax.swing.JMenu();
         cadmed1 = new javax.swing.JMenuItem();
-        sairmenu1 = new javax.swing.JMenuItem();
         pacientetela = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        sairmenu1 = new javax.swing.JMenuItem();
         menusobre = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Unimed");
 
         menuarquivo.setText("Arquivo");
 
-        cadmed1.setText("Cadastrar Med");
+        cadmed1.setText("1 - Cadastrar Med");
         cadmed1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cadmed1ActionPerformed(evt);
@@ -48,21 +50,29 @@ public class telacentral extends javax.swing.JFrame {
         });
         menuarquivo.add(cadmed1);
 
-        sairmenu1.setText("Sair");
-        sairmenu1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sairmenu1ActionPerformed(evt);
-            }
-        });
-        menuarquivo.add(sairmenu1);
-
-        pacientetela.setText("Paciente Tela");
+        pacientetela.setText("2 - Paciente Tela");
         pacientetela.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pacientetelaActionPerformed(evt);
             }
         });
         menuarquivo.add(pacientetela);
+
+        jMenuItem1.setText("3 - Consulta");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        menuarquivo.add(jMenuItem1);
+
+        sairmenu1.setText("4 - Sair");
+        sairmenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sairmenu1ActionPerformed(evt);
+            }
+        });
+        menuarquivo.add(sairmenu1);
 
         jMenuBar1.add(menuarquivo);
 
@@ -72,6 +82,15 @@ public class telacentral extends javax.swing.JFrame {
                 menusobreActionPerformed(evt);
             }
         });
+
+        jMenuItem2.setText("Credito.");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        menusobre.add(jMenuItem2);
+
         jMenuBar1.add(menusobre);
 
         setJMenuBar(jMenuBar1);
@@ -108,6 +127,16 @@ JOptionPane.showMessageDialog(rootPane,"SISTEMA DE MEDICINA\nDESENVOLVIDO POR VI
 Cadpaciente tela = new Cadpaciente(); // Cria o formulário de Cadastro
 tela.show(); // Exibe o formulário de Cadastro        // TODO add your handling code here:
     }//GEN-LAST:event_pacientetelaActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+Consulta tela = new Consulta(); // Cria o formulário de Cadastro
+tela.show(); // Exibe o formulário de Cadastro        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+JOptionPane.showMessageDialog(rootPane,"SISTEMA MEDICO DEV POR VICTOR H.CARVALHO...");     // TODO add your handling code here:
+                                                     // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -147,6 +176,8 @@ tela.show(); // Exibe o formulário de Cadastro        // TODO add your handling
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem cadmed1;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenu menuarquivo;
     private javax.swing.JMenu menusobre;
     private javax.swing.JMenuItem pacientetela;

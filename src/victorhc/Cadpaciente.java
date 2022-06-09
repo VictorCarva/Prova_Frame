@@ -138,7 +138,7 @@ if(txtnomepaciente.getText().trim().isEmpty() ||
                 txtcpf.getText().trim().isEmpty() 
                 )
         {
-            JOptionPane.showMessageDialog(rootPane, "PREENCHA TODOS OS CAMPOS");
+            JOptionPane.showMessageDialog(rootPane, "EXISTEM CAMPOS VAZIOS");
         }else
         {
             Paciente paciente = new Paciente();
